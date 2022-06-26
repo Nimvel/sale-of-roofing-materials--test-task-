@@ -1,0 +1,241 @@
+.app {
+    font: Montserrat;
+    font-size: 1vw;
+    text-align: center;
+
+    cursor: default;
+    overflow: hidden;
+
+    background-color: #F5F5F5;
+    z-index: 1;
+    /* background: linear-gradient(180deg, #eff4f7, #fdfdfd); */
+}
+
+.menu {
+    width: 85vw;
+    height: 85vw;
+
+    position: relative;
+    top: 2.4vh;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.background {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: auto;
+    z-index: 0;
+}
+
+.header {
+    position: relative;
+    
+    width: 82vw;
+    padding: 1vw;
+
+    display: flex;
+    gap: 4.8vw;
+    text-transform: uppercase;
+
+    border-bottom: #F5F5F5 0.1vw solid;
+    background-color: white;
+}
+
+.house {
+    width: 1.5vw;
+    height: 1.5vw;
+}
+
+.contacts {
+    height: 15.5vh;
+    position: relative;
+    top: 2vh;
+    display: grid;
+    grid-template-columns: 17vw 17vw 17vw 17vw 17vw;
+}
+
+#roof {
+    width: 13vw;
+    height: 10vh;
+    position: relative;
+    top: 40%;
+    transform: translate(0, -50%);
+    font-size: 0.9vw;
+}
+
+.download_catalog {
+    height: 5.5vh;
+    position: relative;
+    top: 40%;
+    transform: translate(0, -50%);
+    display: flex;
+}
+
+#download_catalog {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    padding-left: 1vh;
+}
+
+.round_background {
+    width: 3vw;
+    height: 3vw;
+    background-color: white;
+    border-radius: 50vw;
+}
+
+.color_green {
+    position: relative;
+    top: 1vw;
+    text-align: center;
+    color: #12C868;
+}
+
+.border_bottom {
+    height: 1.5vw;
+    border-bottom: 0.1vw dotted #12C868;
+}
+
+.logo {
+    width: 17vw;
+    height: 20vh;
+    background-color: white;
+    clip-path: polygon(5% 75%, 0 70%, 0 0, 100% 0, 100% 70%, 95% 75%, 65% 75%, 55% 65%, 45% 65%, 35% 75%);
+}
+
+.logo img {
+    padding-top: 1vw;
+    width: 15vw;
+}
+
+li {
+    list-style-type: none;
+}
+
+li::before {
+    content: "\2022";
+    color: #12C868;
+}
+
+#answer_online {
+    width: 15vw;
+    height: 7vh;
+
+    position: relative;
+    top: 40%;
+    transform: translate(0, -50%);
+}
+
+.messengers {
+    width: 3vw;
+    height: 3vw;
+    padding: 0.5vw;
+}
+
+.schedule {
+    height: 7vh;
+    position: relative;
+    top: 40%;
+    transform: translate(0, -50%);
+}
+
+.telephone_number {
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+.call_me {
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+
+    width: 7vw;
+}
+
+.content {
+    position: relative;
+    top: 5vh;
+
+    display: grid;
+    grid-template-areas: 
+    'properties sale_roof'
+    'properties and_installation'
+    'properties buttons'
+    'properties answer';
+    grid-template-columns: 15vw;
+    grid-template-rows: 13vw 3vw 8vw;
+    gap: 1vw;
+}
+
+.properties {
+    grid-area: properties;
+
+    width: 9vw;
+    padding-top: 15vw;
+    padding: 2.5vw;
+
+    display: grid;
+    grid-template-rows: 10vh 10vh 10vh 10vh 10vh;
+
+    clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%);
+    background-color: white;
+    border-radius: 2vw;
+}
+
+.sale_roof {
+    grid-area: sale_roof;
+    width: 38vw;
+    font-size: 3.8vw;
+}
+
+.and_installation {
+    grid-area: and_installation;
+
+    width: 25vw;
+    height: 7vh;
+
+    font-size: 2.2vw;
+}
+
+.circles {
+    width: 5vw;
+    height: 2vh;
+}
+
+.buttons {
+    grid-area: buttons;
+
+    font-size: 1.3vw;
+    text-transform: uppercase;
+    color: white;
+
+    display: flex;
+    gap: 1vw;
+}
+
+.button_calculate {
+    width: 20vw;
+    height: 4vh;
+    padding: 2.5vw;
+
+    background-color: #12C868;
+    border-radius: 10vw;
+}
+
+.button_enroll {
+    width: 20vw;
+    height: 4vh;
+    padding: 2.5vw;
+
+    background-color: #F38120;
+    border-radius: 10vw;
+}
+
+.answer {
+    grid-area: answer;
+}
